@@ -1,4 +1,5 @@
 ﻿//testtest
+//linwai23是个大傻X，哈哈
 using CamControl_mvvm.ViewModel;
 
 using System;
