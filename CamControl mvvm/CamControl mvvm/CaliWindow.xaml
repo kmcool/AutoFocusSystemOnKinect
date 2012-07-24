@@ -1,0 +1,29 @@
+﻿<Window x:Class="CamControl_mvvm.CaliWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="CaliWindow" Height="602" Width="542" Name="CaliWindow1" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="346*" />
+            <RowDefinition Height="217*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="326*" />
+            <ColumnDefinition Width="194*" />
+        </Grid.ColumnDefinitions>
+        <Canvas Height="300" HorizontalAlignment="Left" Margin="12,30,0,0" Name="cvsSelectFL" VerticalAlignment="Top" Width="297" />
+        <Label Content="Label" Grid.Column="1" Height="28" HorizontalAlignment="Left" Margin="75,106,0,0" Name="label1" VerticalAlignment="Top" />
+        <Button Content="&gt;&gt;" Grid.Column="1" Height="23" HorizontalAlignment="Left" Margin="113,165,0,0" Name="btnFar" VerticalAlignment="Top" Width="40" MouseLeftButtonDown="btnFar_MouseDown" MouseLeftButtonUp="btnFar_MouseUp" />
+        <Button Content="&lt;&lt;" Grid.Column="1" Height="23" HorizontalAlignment="Left" Margin="39,165,0,0" Name="btnNear" VerticalAlignment="Top" Width="40" MouseLeftButtonUp="btnNear_MouseUp" MouseLeftButtonDown="btnNear_MouseDown" />
+        <Button Content="Remember" Grid.Column="1" Height="36" HorizontalAlignment="Left" Margin="51,228,0,0" Name="btnRem" VerticalAlignment="Top" Width="75" Click="btnRem_Click" />
+        <Button Content="Save and Quit" Grid.Column="1" Height="31" HorizontalAlignment="Left" Margin="43,270,0,0" Name="btnSave" VerticalAlignment="Top" Width="94" Click="btnSave_Click" />
+        <Button Content="Cancel" Grid.Column="1" Height="23" HorizontalAlignment="Left" Margin="51,307,0,0" Name="btnCancel" VerticalAlignment="Top" Width="75" Click="btnCancel_Click" />
+        <Canvas Grid.Column="1" Height="70" HorizontalAlignment="Left" Margin="11,30,0,0" Name="cvsBar" VerticalAlignment="Top" Width="165" >
+            <Slider Canvas.Left="40" Canvas.Top="21" Height="23" Name="BarAxisX" Width="100" Maximum="100" />
+        </Canvas>
+        <ListBox Grid.Row="1" Height="59" HorizontalAlignment="Left" Margin="12,0,0,0" Name="lbFocalLength" VerticalAlignment="Top" Width="297" SelectionChanged="lbFocalLength_SelectionChanged" />
+        <Button Content="Delete" Grid.Column="1" Grid.Row="1" Height="23" HorizontalAlignment="Left" Margin="51,10,0,0" Name="btnDelete" VerticalAlignment="Top" Width="75" Click="btnDelete_Click" />
+        <Button Content="Load" Grid.Column="1" Height="23" HorizontalAlignment="Left" Margin="51,199,0,0" Name="btnLoad" VerticalAlignment="Top" Width="75" Click="btnLoad_Click" />
+        <Button Content="Button" Grid.Column="1" Grid.Row="1" Height="23" HorizontalAlignment="Left" Margin="51,57,0,0" Name="button1" VerticalAlignment="Top" Width="75" Click="button1_Click" />
+    </Grid>
+</Window>
